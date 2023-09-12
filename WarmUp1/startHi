@@ -1,0 +1,5 @@
+public boolean startHi(String str) {
+  if(str.indexOf("hi")==0)
+    return true;
+  return false;
+}
