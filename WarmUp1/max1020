@@ -1,0 +1,23 @@
+public int max1020(int a, int b) {
+  boolean checkA = false;
+  boolean checkB = false;
+  if(a>=10 && a<=20)
+    checkA = true;
+  if(b>=10 && b <=20)
+    checkB = true;
+  
+  if(checkA && checkB){
+    if(a>b)
+      return a;
+    else
+      return b;
+  }
+    
+  else if(checkB && !checkA )
+    return b;
+  else if(checkA)
+    return a;
+  
+  return 0;
+  
+}
