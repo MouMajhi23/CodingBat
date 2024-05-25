@@ -1,0 +1,9 @@
+public String endUp(String str) {
+  
+ 
+  if(str.length()>=3){
+     String last_three = str.substring(str.length()-3, str.length());
+    return str.substring(0,str.length()-3)+last_three.toUpperCase();
+  }
+  return str.toUpperCase();
+}
