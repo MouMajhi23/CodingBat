@@ -1,0 +1,10 @@
+public int stringMatch(String a, String b) {
+        int lenstr = a.length();
+        int lenres = b.length();
+        int count = 0;
+        for(int i =0,j =0; (i<lenstr-1 && j<lenres-1);i++,j++){
+            if(a.substring(i,i+2).equals(b.substring(j,j+2)))
+              count++;
+        }
+        return count;
+}
