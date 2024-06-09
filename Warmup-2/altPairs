@@ -1,0 +1,14 @@
+public String altPairs(String str) {
+  int i = 0;
+  String res = "";
+  while(str.length()-1>=i){
+    int end = i+2;
+    if(end>str.length()){
+      end = str.length();
+    }
+    res = res + str.substring(i,end);
+    i = i+4;
+    
+  }
+  return res;
+}
