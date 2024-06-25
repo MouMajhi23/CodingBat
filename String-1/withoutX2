@@ -1,0 +1,21 @@
+public String withoutX2(String str) {
+  String res = "";
+  if(str.length()>1){
+  if(str.charAt(0)=='x' && str.charAt(1)=='x'){
+    res = str.substring(2);
+    return res;
+  }
+  else if(str.charAt(0)=='x'){
+    res = str.substring(1);
+    return res;
+  }
+  else if(str.charAt(1)=='x')
+  {
+    res = str.charAt(0)+str.substring(2);
+    return res;
+  }
+  
+  return str;
+  }
+  return "";
+}
